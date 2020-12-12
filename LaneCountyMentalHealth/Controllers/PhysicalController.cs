@@ -9,19 +9,6 @@ namespace LaneCountyMentalHealth.Controllers
     public class PhysicalController : Controller
     {
 
-        [HttpGet]
-        public IActionResult getYouthResources()
-        {
-            return View();
-        }
-
-
-        [HttpPost]
-        public IActionResult displayYouthResources()
-        {
-            return View();
-        }
-
         public IActionResult Physical()
         {
             return View();
