@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LaneCountyMentalHealth.Controllers
 {
-    public class YouthController : Controller
+    public class PhysicalController : Controller
     {
 
         [HttpGet]
