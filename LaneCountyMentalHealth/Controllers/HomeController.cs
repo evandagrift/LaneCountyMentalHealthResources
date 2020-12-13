@@ -22,6 +22,15 @@ namespace LaneCountyMentalHealth.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Custom(HomeForum model)
+        {
+            //Here we need to pull frm the context sorting by the HomeForum's Values
+            //put the list of links into the HomeForumm Model
+
+            //pass model to view
+            return View(model);
+        }
 
         public IActionResult About()
         {

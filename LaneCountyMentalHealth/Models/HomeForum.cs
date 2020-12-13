@@ -12,6 +12,7 @@ namespace LaneCountyMentalHealth.Models
         public int SelectionId { get; set; }
         public string TeenYA { get; set; }
         public string FinancialMental { get; set; }
-        public string GenderIdentity { get; set; }
+        public string Etc { get; set; }
+
     }
 }

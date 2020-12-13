@@ -1,39 +1,78 @@
 ﻿@model HomeForum
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
 @{
+    ViewData["Title"] = "Home Page";
 }
-<div class="jumbotron-fluid">
 
-    <h1>Get the right resources for you</h1><form id="$homeform" asp-controller="Home" asp-action="Custom" method="post">
+<div class="container">
 
-        <input id="$a1" type="hidden" asp-for="TeenYA" value="" />
-        <input id="$a2" type="hidden" asp-for="FinancialMental" value="" />
+    <div class="jumbotron-fluid">
 
-        <input id="$a3" type="hidden" asp-for="Etc" value="" />
-        <div class="col-6">
+        <h1>Get the right resources for you</h1>
 
-            <div id="$q1a1" class="card bg-success">Teen</div>
-            <div id="$q2a1" class="card bg-danger" style="display:none">Financial Support</div>
-            <div id="$q3a1" class="card bg-warning" style="display:none"> Etc A </div>
+        <form id="$homeform" asp-controller="Home" asp-action="Custom" method="post">
 
-        </div>
+            <input id="$a1" type="hidden" asp-for="TeenYA" value="" />
+            <input id="$a2" type="hidden" asp-for="FinancialMental" value="" />
 
-        <div class="col-6">
-            <div class="text-center">
-                <div id="$q1a2" class="card bg-secondary"> Young adult </div>
+            <input id="$a3" type="hidden" asp-for="Etc" value="" />
+            <div class="col-6">
 
-                <div id="$q2a2" class="card bg-primary" style="display:none"> Mental Support </div>
-                <div id="$q3a2" class="card bg-info" style="display:none"> Etc B </div>
+                <div id="$q1a1" class="card bg-success">Teen</div>
+                <div id="$q2a1" class="card bg-danger" style="display:none">Financial Support</div>
+                <div id="$q3a1" class="card bg-warning" style="display:none"> Etc A </div>
 
             </div>
-        </div>
+
+            <div class="col-6">
+                <div class="text-center">
+                    <div id="$q1a2" class="card bg-secondary"> Young adult </div>
+
+                    <div id="$q2a2" class="card bg-primary" style="display:none"> Mental Support </div>
+                    <div id="$q3a2" class="card bg-info" style="display:none"> Etc B </div>
+
+                </div>
+            </div>
 
 
-    </form>
+        </form>
 
+    </div>
 </div>
+
+<div class="jumbotron">
+    <h3 style="text-align:center;">Additional Resources</h3>
+    <hr />
+    <article style="float:right; position:relative; right:150px;">
+        <h5>
+            <u>Saftey</u>
+        </h5>
+        <br />
+        <ul>
+            <li><a href="https://www.lookingglass.us/station-7">Runaway and Homeless Shelter</a></li>
+            <li><a href="https://www.lookingglass.us/new-roads">Housing and Education</a></li>
+            <li><a href="https://safefamilieslanecounty.org/resources/lane-county-resources/">Safe Place Resources</a></li>
+        </ul>
+    </article>
+    <article style="float:left; position:relative; left:150px">
+        <h5><u>Physiological Needs</u></h5>
+        <br />
+        <ul>
+            <li><a href="https://www.lanekids.org/10-local-food-resources-for-families-you-might-not-know-about/">Food Resources</a></li>
+            <li><a href="https://www.lanecounty.org/cms/one.aspx?pageId=9773412">Heating and Energy Assistance</a></li>
+            <li><a href="https://www.hoseayouth.org/drop-in-center/">Laundry/Showers/Day use for homeless teens</a></li>
+        </ul>
+        <br />
+    </article>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
+<br />
+<br />
+<br />
 
 <script>
 
@@ -136,48 +175,4 @@
         answer3Element.value = answer3Value;
         document.getElementById("$homeform").submit();
     }
-
-    /*
-     *             <div id="$q2" class="card-columns" style="display:none">
-                <button style="display:none" class="card bg-light">
-                    Q3 A
-                </button>
-
-                <button style="display:none" class="card bg-dark">
-                    Q3 B
-                </button>
-            </div>
-    function clickQ1A1() {
-        q1a1.style.display = "none";
-        q1a2.style.display = "none";
-
-        q2a1.style.display = "";
-        q2a2.style.display = "";
-    }
-
-    function clickQ1A2() {
-        q1a1.style.display = "none";
-        q1a2.style.display = "none";
-
-        q2a1.style.display = "";
-        q2a2.style.display = "";
-        console.log("testest2");
-
-    }
-    function clickQ2A1() {
-        q2a1.style.display = "none";
-        q2a2.style.display = "none";
-
-        q3a1.style.display = "";
-        q3a2.style.display = "";
-
-    }
-    function clickQ2A2() {
-        q2a1.style.display = "none";
-        q2a2.style.display = "none";
-
-        q3a1.style.display = "";
-        q3a2.style.display = "";
-
-    }*/
 </script>
