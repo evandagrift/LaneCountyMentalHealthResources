@@ -6,19 +6,8 @@ using System.Threading.Tasks;
 
 namespace LaneCountyMentalHealth.Controllers
 {
-    public class MentalController : Controller
+    public class AboutController : Controller
     {
-
-        public IActionResult Physical()
-        {
-            return View();
-        }
-
-        public IActionResult Mental()
-        {
-            return View();
-        }
-
         public IActionResult Index()
         {
             return View();

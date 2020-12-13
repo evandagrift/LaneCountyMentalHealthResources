@@ -13,16 +13,14 @@
         <div asp-validation-summary="All"></div>
         <!-- form goes here -->
         <div class="form-group">
-            <input class="form-control" placeholder="Phone Number" asp-for="PhoneNumber" />
+            <input class="form-control" placeholder="Email" asp-for="Email" />
             <br />
-            <input class="form-control" placeholder="Email" asp-for="" />
+            <input class="form-control" placeholder="Name" asp-for="Name" />
             <br />
-            <input class="form-control" placeholder="Name" asp-for="" />
-            <br />
-            <input class="form-control" placeholder="Date" asp-for="" />
+            <input class="form-control" placeholder="Date" asp-for="Date" />
             <br />
             <!-- commented out because it does not function correctly... works now! -->
-            <textarea asp-for="" placeholder="Enter your feedback here..." class="form-control"></textarea>
+            <textarea asp-for="Feedback" placeholder="Enter your feedback here..." class="form-control"></textarea>
             <button class="btn-default">Submit</button>
         </div>
     </form>
