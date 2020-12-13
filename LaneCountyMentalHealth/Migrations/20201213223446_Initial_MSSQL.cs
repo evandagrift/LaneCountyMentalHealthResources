@@ -30,7 +30,7 @@ namespace LaneCountyMentalHealth.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TeenYA = table.Column<string>(nullable: true),
                     FinancialMental = table.Column<string>(nullable: true),
-                    GenderIdentity = table.Column<string>(nullable: true)
+                    Etc = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -44,6 +44,7 @@ namespace LaneCountyMentalHealth.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Description = table.Column<string>(nullable: true),
+                    Url = table.Column<string>(nullable: true),
                     Catagory = table.Column<string>(nullable: true),
                     SubCatagory = table.Column<string>(nullable: true),
                     AdditionalNote = table.Column<string>(nullable: true)

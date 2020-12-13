@@ -49,10 +49,10 @@ namespace LaneCountyMentalHealth.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("FinancialMental")
+                    b.Property<string>("Etc")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("GenderIdentity")
+                    b.Property<string>("FinancialMental")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TeenYA")
@@ -80,6 +80,9 @@ namespace LaneCountyMentalHealth.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SubCatagory")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
