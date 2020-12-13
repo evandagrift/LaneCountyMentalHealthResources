@@ -5,16 +5,20 @@
 @{
 }
 <div class="container text-center">
-    
-    <h1>Generated Links Specific to user</h1>
+
+    <h1>Generated Links Specific to User</h1>
     @foreach (Link link in Model.Links)
     {
-<div class="card">
-    <p>@link.Description</p>
-    <p>@link.Url</p>
-    <p>@link.Catagory</p>
-    <p>@link.SubCatagory</p>
-</div>
+        <div class="card">
+            <a href="@link.Url">
+                <div class="row flex-fill">
+                    <div class="col-3">@link.Description</div>
+                    <div class="col-3">@link.Url</div>
+                    <div class="col-3">@link.Catagory</div>
+                    <div class="col-3">@link.SubCatagory</div>
+                </div>
+            </a>
+        </div>
     }
 
 </div>

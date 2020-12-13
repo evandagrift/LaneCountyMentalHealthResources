@@ -38,7 +38,7 @@ namespace LaneCountyMentalHealth.Controllers
                 links = new List<Link>();
             }
 
-            returnLinks = context.Links.ToList();
+            returnLinks = context.Links.Where(l => l.Catagory == forum.FinancialMental || l.SubCatagory.Contains(forum.TeenYA)).ToList();
 
             HomepageModel model = new HomepageModel();
             model.Links = returnLinks;
@@ -65,37 +65,9 @@ namespace LaneCountyMentalHealth.Controllers
             l.Description = "Looking Glass";
             l.Url = "https://www.lookingglass.us/services/#counseling";
             l.Catagory = "Mental";
-            l.SubCatagory = "Youth, Young Adult";
+            l.SubCatagory = "Teen, Young Adult";
 
             links.Add(l);
-
-
-            l = new Link();
-            l.Description = "Lane Kids";
-            l.Url = "https://www.lanekids.org/10-local-food-resources-for-families-you-might-not-know-about/";
-            l.Catagory = "Financial";
-            l.SubCatagory = "Youth, Young Adult, Food Insecurity";
-
-            links.Add(l);
-
-
-            l = new Link();
-            l.Description = "Lane Behavioral Health";
-            l.Url = "https://lanecounty.org/government/county_departments/health_and_human_services/behavioral_health/child_and_adolescent_mental_health_services";
-            l.Catagory = "Mental";
-            l.SubCatagory = "Therapy, Mental Health, Teen, Young Adult";
-
-            links.Add(l);
-
-
-            l = new Link();
-            l.Description = "Teen Empowerment";
-            l.Url = "https://youthempowerment.com/articles-of-empowerment/";
-            l.Catagory = "Mental";
-            l.SubCatagory = "Coping Strategies, Mental Health, Suicide Prevention, Teen, Young Adult";
-
-            links.Add(l);
-
 
             l = new Link();
             l.Description = "Looking Glass Shelter";
@@ -105,12 +77,54 @@ namespace LaneCountyMentalHealth.Controllers
 
             links.Add(l);
 
+            l = new Link();
+            l.Description = "Looking Glass Educational";
+            l.Url = "https://www.lookingglass.us/services/#runaway";
+            l.Catagory = "Financial";
+            l.SubCatagory = "Young Adult, Education";
+
+            links.Add(l);
+
+            l = new Link();
+            l.Description = "Lane Kids";
+            l.Url = "https://www.lanekids.org/10-local-food-resources-for-families-you-might-not-know-about/";
+            l.Catagory = "Financial";
+            l.SubCatagory = "Teen, , Food Insecurity";
+
+            links.Add(l);
+
+
+            l = new Link();
+            l.Description = "Lane Behavioral Health";
+            l.Url = "https://lanecounty.org/government/county_departments/health_and_human_services/behavioral_health/child_and_adolescent_mental_health_services";
+            l.Catagory = "Mental";
+            l.SubCatagory = "Therapy, Mental Health, Young Adult";
+
+            links.Add(l);
+
+
+            l = new Link();
+            l.Description = "Teen Empowerment";
+            l.Url = "https://Teenempowerment.com/articles-of-empowerment/";
+            l.Catagory = "Mental";
+            l.SubCatagory = "Coping Strategies, Mental Health, Suicide Prevention, Teen";
+
+            links.Add(l);
+
+            l = new Link();
+            l.Description = "Thrive Behavioral Health";
+            l.Url = "https://www.thrivebehavioral.com/";
+            l.Catagory = "Financial";
+            l.SubCatagory = "Therapy, Teen";
+
+            links.Add(l);
+
 
             l = new Link();
             l.Description = "Food for Lane County";
             l.Url = "https://foodforlanecounty.org/get-help/programs-for-children/";
             l.Catagory = "Financial";
-            l.SubCatagory = "Teen, Young Adult, Food Insecurity";
+            l.SubCatagory = "Young Adult, Food Insecurity";
 
             links.Add(l);
 
