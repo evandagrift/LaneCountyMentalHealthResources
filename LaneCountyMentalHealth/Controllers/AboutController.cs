@@ -8,6 +8,11 @@ namespace LaneCountyMentalHealth.Controllers
 {
     public class AboutController : Controller
     {
+        public IActionResult FeedBack()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();
