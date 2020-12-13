@@ -4,37 +4,38 @@
 *@
 @{
 }
-<div class="jumbotron-fluid">
+<div class="text-center">
+    <div class="jumbotron-fluid">
 
-    <h1>Get the right resources for you</h1><form id="$homeform" asp-controller="Home" asp-action="Generated" method="post">
+        <h1>Get the right resources for you</h1><form id="$homeform" asp-controller="Home" asp-action="Generated" method="post">
 
-        <input id="$a1" type="hidden" asp-for="TeenYA" value="" />
-        <input id="$a2" type="hidden" asp-for="FinancialMental" value="" />
+            <input id="$a1" type="hidden" asp-for="TeenYA" value="" />
+            <input id="$a2" type="hidden" asp-for="FinancialMental" value="" />
 
-        <input id="$a3" type="hidden" asp-for="Etc" value="" />
-        <div class="col-6">
+            <input id="$a3" type="hidden" asp-for="Etc" value="" />
+            <div class="col-6">
 
-            <div id="$q1a1" class="card bg-success">Teen</div>
-            <div id="$q2a1" class="card bg-danger" style="display:none">Financial Support</div>
-            <div id="$q3a1" class="card bg-warning" style="display:none"> Etc A </div>
-
-        </div>
-
-        <div class="col-6">
-            <div class="text-center">
-                <div id="$q1a2" class="card bg-secondary"> Young adult </div>
-
-                <div id="$q2a2" class="card bg-primary" style="display:none"> Mental Support </div>
-                <div id="$q3a2" class="card bg-info" style="display:none"> Etc B </div>
+                <div id="$q1a1" class="card bg-success">Teen</div>
+                <div id="$q2a1" class="card bg-danger" style="display:none">Financial Support</div>
+                <div id="$q3a1" class="card bg-warning" style="display:none"> Etc A </div>
 
             </div>
-        </div>
+
+            <div class="col-6">
+                <div class="text-center">
+                    <div id="$q1a2" class="card bg-secondary"> Young adult </div>
+
+                    <div id="$q2a2" class="card bg-primary" style="display:none"> Mental Support </div>
+                    <div id="$q3a2" class="card bg-info" style="display:none"> Etc B </div>
+
+                </div>
+            </div>
 
 
-    </form>
+        </form>
 
+    </div>
 </div>
-
 <script>
 
     var homeForm = document.getElementById($homeform);

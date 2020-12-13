@@ -1,23 +1,5 @@
 ﻿
-#eheader {
-    /*background-image: url(images/banner.jpg);*/
-    background-color: rgb(199, 184, 166,.30);
-    border-radius: 5px;
-    margin:10px;
-    padding: 20px;
-}
 
-#esection {
-    background-color: rgb(199, 184, 166,.05);
-    border-radius: 5px;
-    text-align: left;
-    padding: 20px;
-}
-
-#ebackground {
-    background-color: rgb(199, 184, 166,.175);
-    margin-bottom: 10px;
-}
 
 /* emily's css code here
 
