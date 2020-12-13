@@ -10,22 +10,13 @@
 <body id="ebackground">
     <header id="ebackground">
         <nav id="ebackground" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="dropdown show text-right">
-                <a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown">
-                    List
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" asp-controller="About" asp-action="FeedBack">Feedback Form</a>
-                    <a class="dropdown-item" asp-controller="About" asp-action="Index">About Page</a>
-                </div>
-            </div>
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Services for Youth and Young Adults</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse text-center">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -36,8 +27,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Mental" asp-action="Index">Mental</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                        <li class="dropdown show text-left">
+                            <a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown">
+                                About
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                                <a class="dropdown-item" asp-controller="About" asp-action="FeedBack">Feedback Form</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
