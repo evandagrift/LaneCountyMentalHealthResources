@@ -19,45 +19,39 @@
 <br />
 <br />
 <hr />
+<div class="container">
+    <h1 style="clear:right; text-align:center;"><u>Resources to Help</u></h1>
+    <aside style="float:right; border:dashed; width:200px; border-width:1px; border-radius:20px; padding:10px; background-color:aliceblue;">
+        With everything going on today we hope that this form will tailor resources to reflect your specific needs.
+    </aside>
+    <br />
+    <br />
 
-<h1 style="clear:right; text-align:center;"><u>Resources to Help</u></h1>
-<aside style="float:right; border:dashed; width:200px; border-width:1px; border-radius:20px; padding:10px; background-color:aliceblue;">
-    With everything going on today we hope that this form will tailor resources to reflect your specific needs.
-</aside>
-<br />
-<br />
+    <div class="jumbotron-fluid">
 
-<div class="jumbotron-fluid">
+        <form id="$homeform" asp-controller="Home" asp-action="Generated" method="post">
 
-    <form id="$homeform" asp-controller="Home" asp-action="Generated" method="post">
+            <input id="$a1" type="hidden" asp-for="TeenYA" value="" />
+            <input id="$a2" type="hidden" asp-for="FinancialMental" value="" />
 
-        <input id="$a1" type="hidden" asp-for="TeenYA" value="" />
-        <input id="$a2" type="hidden" asp-for="FinancialMental" value="" />
+            <input id="$a3" type="hidden" asp-for="Etc" value="" />
 
-        <input id="$a3" type="hidden" asp-for="Etc" value="" />
-        <div class="col-6">
+            <div class="row text-center">
 
-            <div id="$q1a1" class="card bg-success">Teen</div>
-            <div id="$q2a1" class="card bg-danger" style="display:none">Financial Support</div>
-            <div id="$q3a1" class="card bg-warning" style="display:none"> Etc A </div>
+                <div id="$q1a1" class="card bg-success homebutton m-3"><h1 class="text-center pt-5">Teen</h1></div>
+                <div id="$q2a1" class="card bg-danger homebutton m-3" style="display:none"><h1 class="text-center pt-5">Financial Support</h1></div>
+                <div id="$q3a1" class="card bg-warning homebutton m-3" style="display:none"><h1 class="text-center pt-5">Etc A</h1></div>
 
-        </div>
+                <div id="$q1a2" class="card bg-secondary homebutton m-3"><h1 class="text-center pt-5">Young adult</h1></div>
+                <div id="$q2a2" class="card bg-primary homebutton m-3" style="display:none"><h1 class="text-center pt-5">Mental Support</h1></div>
+                <div id="$q3a2" class="card bg-info homebutton m-3" style="display:none"><h1 class="text-center pt-5">Etc B</h1></div>
 
-        <div class="col-6">
-            <div class="text-center">
-                <div id="$q1a2" class="card bg-secondary"> Young adult </div>
 
-                <div id="$q2a2" class="card bg-primary" style="display:none"> Mental Support </div>
-                <div id="$q3a2" class="card bg-info" style="display:none"> Etc B </div>
 
             </div>
-        </div>
-
-
-    </form>
-
+        </form>
+    </div>
 </div>
-
 <br />
 <br />
 <hr />
@@ -167,7 +161,7 @@
         q3a1.style.display = "";
         q3a2.style.display = "";
 
-        answer2Value = "Financial Support";
+        answer2Value = "Financial ";
     }
 
     function clickQ2A2() {
@@ -177,20 +171,18 @@
         q3a1.style.display = "";
         q3a2.style.display = "";
 
-        answer2Value = "Mental Support";
+        answer2Value = "Mental";
     }
     //youth/teen
     function clickQ3A1() {
 
         answer3Value = "Etc A";
-        console.log("ppppppp");
         formSubmit();
     }
 
     function clickQ3A2() {
 
         answer3Value = "Etc V";
-        console.log("aaaaaaaaaa");
         formSubmit();
     }
 

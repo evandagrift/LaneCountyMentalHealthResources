@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LaneCountyMentalHealth.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    [Migration("20201213021354_Initial_MSSQL")]
+    [Migration("20201213223446_Initial_MSSQL")]
     partial class Initial_MSSQL
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -51,10 +51,10 @@ namespace LaneCountyMentalHealth.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("FinancialMental")
+                    b.Property<string>("Etc")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("GenderIdentity")
+                    b.Property<string>("FinancialMental")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TeenYA")
@@ -82,6 +82,9 @@ namespace LaneCountyMentalHealth.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SubCatagory")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
